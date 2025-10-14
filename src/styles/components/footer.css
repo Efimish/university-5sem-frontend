@@ -1,0 +1,16 @@
+.site-footer {
+  color: var(--color-gray);
+  background-color: var(--color-dark-blue);
+}
+
+.site-footer__container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-footer__bottom {
+  background-color: var(--color-dark-blue-lighter);
+}
