@@ -3,38 +3,6 @@
 @custom-media --lg-viewport (width >= 1024px);
 @custom-media --xl-viewport (width >= 1280px);
 
-@font-face {
-  font-family: Lato;
-  src: url('../assets/fonts/Lato-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Lato;
-  src: url('../assets/fonts/Lato-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Lato;
-  src: url('../assets/fonts/Lato-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Ubuntu;
-  src: url('../assets/fonts/Ubuntu-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --color-white: #fff;
   --color-light-gray: #f4f5f6;
@@ -42,6 +10,9 @@
   --color-purple: #7772f1;
   --color-dark-blue: #1e212c;
   --color-dark-blue-lighter: #2a2c37;
+  --color-input: #3a3c46;
+  --color-input-border: #61636b;
+  --color-input-placeholder: #b0b1b5;
 }
 
 body {
@@ -63,6 +34,10 @@ button {
   border-radius: 0.25em;
 }
 
-main {
-  min-height: 600px;
+input {
+  color: var(--color-input-placeholder);
+  background-color: var(--color-input);
+  border: 1px solid var(--color-input-border);
+  padding: 0.6rem 1rem;
+  border-radius: 0.25rem;
 }

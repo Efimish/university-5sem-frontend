@@ -15,99 +15,110 @@
     <script async defer type="module" src="/src/index.js"></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-header__container">
-        <nav class="site-header__nav">
-          <div class="site-header__nav-left">
-            <a class="site-header__nav-logo">
-              <img src="/images/logo.svg" alt="" />
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__nav">
+          <div class="header__nav-left">
+            <a href="#" class="header__nav-logo">
+              <img src="/images/logo.svg" alt="CreateX Logo" />
             </a>
-            <select class="site-header__nav-select">
+            <select class="header__nav-select">
               <option>Services</option>
             </select>
-            <a class="site-header__nav-link site-header__nav-link_selected">Case Studies</a>
-            <a class="site-header__nav-link">About Us</a>
-            <a class="site-header__nav-link">Blog</a>
-            <a class="site-header__nav-link">Contacts</a>
+            <a href="#" class="header__nav-link header__nav-link_selected">Case Studies</a>
+            <a href="#" class="header__nav-link">About Us</a>
+            <a href="#" class="header__nav-link">Blog</a>
+            <a href="#" class="header__nav-link">Contacts</a>
           </div>
-          <button class="site-header__nav-button">Talk to a human</button>
+          <button class="header__nav-button">Talk to a human</button>
         </nav>
-        <div class="site-header__breadcrumb">
+        <div class="header__breadcrumb breadcrumb">
           <img src="/images/Home.svg" />
           <img src="/images/Right-chevron.svg" />
           <span>Case Studies</span>
           <img src="/images/Right-chevron.svg" />
           <span>200% increase in conversion rate for Lovato Company</span>
         </div>
-        <img src="/images/client-logo.svg" alt="" />
-        <h1 class="site-header__title">200% increase in conversion rate for Lovato Company</h1>
+        <img src="/images/header/client-logo.svg" alt="ForSale Logo" />
+        <h1 class="header__title">200% increase in conversion rate for Lovato Company</h1>
       </div>
     </header>
-    <main>
-      <!-- <form class="header__form">
-        <label for="email">Email</label>
-        <div class="header__form-email">
-          <input class="header__form-input" type="email" id="email" placeholder="Your working email" />
-          <button class="header__form-button">Subscribe</button>
-        </div>
-      </form> -->
-    </main>
-    <footer class="site-footer">
-      <div class="site-footer__container">i am footer</div>
-      <hr />
-      <div class="site-footer__container">i am footer</div>
-      <div class="site-footer__bottom">i am footer</div>
-      <div class="site-footer__container">i am footer</div>
-    </footer>
-    <!-- <footer class="site-footer">
-      <div class="">
-        <div class="">
-          <h1>CREATEX</h1>
-          <p>
+    <main></main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__top-column footer__top-column_wide">
+          <img src="/images/logo.svg" alt="CreateX Logo" class="footer__top-column-img" />
+          <p class="footer__top-column-p">
             Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through a
             wealth of performance data and market research. We create science-based SEO strategies to empower our
             clients.
           </p>
-          <p>Facebook | LinkedIn | Twitter | Instagram</p>
+          <div class="footer__socials">
+            <img src="/images/footer/Facebook.svg" alt="Facebook" />
+            <img src="/images/footer/Linked-In.svg" alt="Linked In" />
+            <img src="/images/footer/Twitter.svg" alt="Twitter" />
+            <img src="/images/footer/Instagram.svg" alt="Instagram" />
+          </div>
         </div>
-        <div class="flex-column">
-          <h1>COMPANY</h1>
-          <p>About Us</p>
-          <p>Case Studies</p>
-          <p>Blog</p>
-          <p>Careers</p>
-          <p>Contacts</p>
+        <div class="footer__top-column">
+          <h2>COMPANY</h2>
+          <a href="#">About Us</a>
+          <a href="#">Case Studies</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Contacts</a>
         </div>
-        <div class="flex-column">
-          <h1>SERVICES</h1>
-          <p>Social Media</p>
-          <p>SEO</p>
-          <p>Research</p>
-          <p>Content & PR</p>
-          <p>Payed Traffic</p>
+        <div class="footer__top-column">
+          <h2>SERVICES</h2>
+          <a href="#">Social Media</a>
+          <a href="#">SEO</a>
+          <a href="#">Research</a>
+          <a href="#">Content & PR</a>
+          <a href="#">Payed Traffic</a>
         </div>
-        <div class="flex-column">
-          <h1>CONTACT US</h1>
-          <p>📱 (405) 555-0128</p>
-          <p>✉️ hello@createx.com</p>
+        <div class="footer__top-column footer__top-column_wide">
+          <h2>CONTACT US</h2>
+          <span class="footer__top-column-link">
+            <img src="/images/footer/iPhone.svg" alt="Phone" />
+            <a href="tel:4055550128">(405)&nbsp;555-0128</a>
+          </span>
+          <span class="footer__top-column-link">
+            <img src="/images/footer/Mail.svg" alt="Mail" />
+            <a href="mailto:hello@createx.com">hello@createx.com</a>
+          </span>
         </div>
-        <div class="flex-column">
-          <h1>SIGN UP TO OUR NEWSLETTER</h1>
-          <input placeholder="Email address" />
-          <p>*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+        <div class="footer__top-column footer__top-column_wide">
+          <h2>SIGN UP TO OUR NEWSLETTER</h2>
+          <input placeholder="Email Address" class="footer__top-column-input" />
+          <label
+            >*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</label
+          >
         </div>
       </div>
-      <hr />
-      <div class="flex-row">
-        <p>Clutch</p>
-        <p>GoodFirms</p>
-        <p>Google Partner</p>
-        <p>HubSpot</p>
-        <p>GO TO TOP ^</p>
+      <hr class="footer__divider" />
+      <div class="footer__middle">
+        <div class="footer__awards">
+          <img src="/images/footer/award-1.png" alt="Reviewed on Clutch" />
+          <img src="/images/footer/award-2.png" alt="GoodFirms" />
+          <img src="/images/footer/award-3.png" alt="Google Partner" />
+          <img src="/images/footer/award-4.png" alt="HubSpot certified partner" />
+        </div>
+        <a href="#top">
+          <span>GO TO TOP</span>
+          <button>
+            <img src="/images/Up-chevron.svg" alt="up chevron" />
+          </button>
+        </a>
       </div>
-      <div>
-        <p>&copy; All right reserved. Made with ❤️ by Createx Studio</p>
+      <div class="footer__bottom">
+        <div class="footer__container">
+          <p class="footer__bottom-p">
+            <span> &copy; All rights reserved. Made with </span>
+            <img src="/images/footer/Heart.svg" alt="heart" />
+            <span>by Createx Studio</span>
+          </p>
+        </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
