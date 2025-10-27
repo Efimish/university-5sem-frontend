@@ -1,13 +1,11 @@
 .container {
-  width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
 }
 
-@media (--sm-viewport) {
+/* @media (--sm-viewport) {
   .container {
     max-width: 576px;
   }
@@ -16,8 +14,6 @@
 @media (--md-viewport) {
   .container {
     max-width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
@@ -31,4 +27,4 @@
   .container {
     max-width: 1312px;
   }
-}
+} */

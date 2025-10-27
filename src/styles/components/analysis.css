@@ -4,15 +4,8 @@
   padding: 2em 0;
 }
 
-.analysis__container {
-  max-width: 1230px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-
-  & * {
-    flex-basis: 50%;
-  }
+.analysis__container * {
+  flex-basis: 50%;
 }
 
 .analysis__form-title {
