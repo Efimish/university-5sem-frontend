@@ -43,3 +43,8 @@ button {
 input {
   cursor: text;
 }
+
+[type='checkbox'],
+[type='submit'] {
+  cursor: pointer;
+}

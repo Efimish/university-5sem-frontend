@@ -1,2 +1,65 @@
 .analysis {
+  color: var(--color-footer-text);
+  background-color: var(--color-footer-bg);
+  padding: 2em 0;
+}
+
+.analysis__container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+
+  & * {
+    flex-basis: 50%;
+  }
+}
+
+.analysis__form-title {
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.analysis__form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin: 1em 0;
+
+  & * {
+    height: fit-content;
+  }
+}
+
+.analysis__form-item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.analysis__form-input {
+  margin: 0.5em 0;
+  background-color: var(--color-input-bg);
+  border: 1px solid var(--color-input-border);
+  padding: 0.6em 1em;
+  border-radius: 0.25em;
+}
+
+.analysis__form-checkbox {
+  flex-basis: 0;
+  accent-color: var(--color-button);
+}
+
+.analysis__form-checkbox-label {
+  margin-top: -0.5em;
+  flex-shrink: 0;
+  margin-right: 2em;
+}
+
+.analysis__form-button {
+  background-color: var(--color-button);
+  padding: 0.6em;
+  border: none;
+  border-radius: 0.25em;
 }

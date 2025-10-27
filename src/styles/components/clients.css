@@ -1,2 +1,5 @@
 .clients {
+  color: var(--color-main-text);
+  background-color: var(--color-main-bg-muted);
+  padding: 6em 0;
 }
