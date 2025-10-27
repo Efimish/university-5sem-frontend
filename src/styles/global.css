@@ -4,13 +4,25 @@
 @custom-media --xl-viewport (width >= 1280px);
 
 :root {
-  --color-white: #fff;
-  --color-light-gray: #f4f5f6;
-  --color-gray: #a6a7ae;
-  --color-purple: #7772f1;
-  --color-dark-blue: #1e212c;
-  --color-dark-blue-lighter: #2a2c37;
-  --color-input: #3a3c46;
+  /* header */
+  --color-header-text: #fff;
+  --color-header-text-muted: #b4b5ba;
+
+  /* main */
+  --color-main-text: #1e212c;
+  --color-main-text-muted: #424551;
+  --color-main-bg: #fff;
+  --color-main-bg-muted: #f4f5f6;
+
+  /* footer */
+  --color-footer-text: #fff;
+  --color-footer-text-muted: #a5a6ab;
+  --color-footer-bg: #1e212c;
+  --color-footer-bg-muted: #292c37;
+
+  /* other */
+  --color-button: #7772f1;
+  --color-input-bg: #3a3c46;
   --color-input-border: #61636b;
   --color-input-placeholder: #b0b1b5;
 }
@@ -28,13 +40,5 @@ button {
 }
 
 input {
-  color: var(--color-input-placeholder);
-  background-color: var(--color-input);
-  border: 1px solid var(--color-input-border);
-  padding: 0.6rem 1rem;
-  border-radius: 0.25rem;
-}
-
-img {
-  color: inherit;
+  cursor: text;
 }

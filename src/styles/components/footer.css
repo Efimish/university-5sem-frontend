@@ -1,6 +1,6 @@
 .footer {
-  color: var(--color-gray);
-  background-color: var(--color-dark-blue);
+  color: var(--color-footer-text-muted);
+  background-color: var(--color-footer-bg);
   padding-top: 4rem;
 }
 
@@ -18,7 +18,7 @@
 .footer__category,
 .footer__go-to-top,
 .footer__copyright {
-  color: var(--color-white);
+  color: var(--color-footer-text);
 }
 
 .footer__top-column {
@@ -54,6 +54,10 @@
 
 .footer__top-column-input {
   margin: 1rem 0;
+  background-color: var(--color-input-bg);
+  border: 1px solid var(--color-input-border);
+  padding: 0.6em 1em;
+  border-radius: 0.25em;
 }
 
 .footer__top-column-link {
@@ -62,7 +66,12 @@
 }
 
 .footer__divider {
-  background: linear-gradient(to right, var(--color-dark-blue) 0%, var(--color-gray) 50%, var(--color-dark-blue) 100%);
+  background: linear-gradient(
+    to right,
+    var(--color-footer-bg) 0%,
+    var(--color-footer-text-muted) 50%,
+    var(--color-footer-bg) 100%
+  );
   height: 1px;
   border: 0;
   margin: 2em;
@@ -88,7 +97,7 @@
 
 .footer__button {
   margin-left: 0.5em;
-  background-color: var(--color-purple);
+  background-color: var(--color-button);
   padding: 0.5em;
   border: none;
   border-radius: 0.25em;
@@ -97,7 +106,7 @@
 /* bottom */
 
 .footer__bottom {
-  background-color: var(--color-dark-blue-lighter);
+  background-color: var(--color-footer-bg-muted);
 }
 
 .footer__bottom-p {

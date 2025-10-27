@@ -1,0 +1,27 @@
+.main {
+  color: var(--color-main-text);
+  background-color: var(--color-main-bg);
+}
+
+.main__container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+/* left */
+
+.main__container-left {
+  flex-basis: 800px;
+}
+
+/* right */
+
+.main__container-right {
+  flex-basis: 400px;
+}
+
+.main__container-gray {
+  background-color: var(--color-main-bg-muted);
+}
