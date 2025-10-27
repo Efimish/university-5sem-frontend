@@ -3,3 +3,74 @@
   background-color: var(--color-main-bg-muted);
   padding: 6em 0;
 }
+
+.clients__container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients__title {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.clients__title_wide {
+  flex-grow: 2;
+}
+
+.clients__title_small {
+  font-size: 1.5em;
+  margin-right: 1.5em;
+}
+
+.clients__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.clients__row_wide {
+  width: 100%;
+}
+
+.clients__arrow {
+  flex-shrink: 0;
+  padding: 0.8em;
+  border-radius: 1000em;
+
+  & img {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+.clients__arrow:hover {
+  background-color: var(--color-button);
+
+  & img {
+    filter: invert(1);
+  }
+}
+
+.clients__testimonial {
+  padding-top: 3em;
+  background-image: url('/images/clients/background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.clients__cart {
+  margin: 2em -3em -5em;
+}
+
+.clients__button {
+  color: var(--color-footer-text);
+  background-color: var(--color-button);
+  padding: 0.6em 2em;
+  border: none;
+  border-radius: 0.25em;
+}
