@@ -66,6 +66,10 @@
   }
 }
 
+.header__breadcrumb-parent {
+  color: var(--color-header-text);
+}
+
 .header__title {
   font-size: 3em;
   font-weight: 700;
