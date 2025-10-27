@@ -107,6 +107,7 @@
 
 .footer__bottom {
   background-color: var(--color-footer-bg-muted);
+  padding: 1em 0;
 }
 
 .footer__bottom-p {
