@@ -28,10 +28,38 @@
   --color-input-placeholder: #b0b1b5;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* header */
+    --color-header-text: #fff;
+    --color-header-text-muted: #b4b5ba;
+
+    /* main */
+    --color-main-text: #d1cdc7;
+    --color-main-text-muted: #bab4ab;
+    --color-main-bg: #181a1b;
+    --color-main-bg-muted: #1e2021;
+
+    /* footer */
+    --color-footer-text: #fff;
+    --color-footer-text-muted: #a5a6ab;
+    --color-footer-bg: #1e212c;
+    --color-footer-bg-muted: #292c37;
+
+    /* other */
+    --color-button: #7772f1;
+    --color-button-bg-muted: #d7dadd;
+    --color-input-bg: #3a3c46;
+    --color-input-border: #61636b;
+    --color-input-placeholder: #b0b1b5;
+  }
+}
+
 body {
   font-size: 18px;
   line-height: 1.6;
   font-family: Lato, sans-serif;
+  background-color: var(--color-main-bg);
 }
 
 a,
