@@ -31,6 +31,10 @@
   gap: 2em;
 }
 
+.header__nav-logo {
+  flex-shrink: 0;
+}
+
 .header__nav-link {
   color: var(--color-header-text-muted);
 }
