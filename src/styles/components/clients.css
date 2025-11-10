@@ -71,3 +71,47 @@
   border: none;
   border-radius: 0.25em;
 }
+
+@media (prefers-color-scheme: dark) {
+  .clients__cart {
+    filter: invert(0.8);
+  }
+}
+
+@media (--viewport-xs) {
+  .clients {
+    padding: 3.5em 0;
+    text-align: center;
+  }
+
+  .clients__title {
+    font-size: 1.5em;
+  }
+
+  .clients__title_small {
+    margin-right: 0;
+    font-size: 1.25em;
+  }
+
+  .clients__row {
+    flex-direction: column; /* из строки → в столбец */
+    gap: 1.5em;
+    margin-top: 1.5em;
+  }
+
+  .clients__arrow {
+    display: none; /* стрелки убираем, на телефоне не нужны */
+  }
+
+  .clients__testimonial {
+    padding-top: 2em;
+    background-size: cover; /* картинка адаптивнее смотрится */
+    margin-top: 2em;
+  }
+
+  .clients__button {
+    margin-top: 2em;
+    width: 100%; /* кнопка на всю ширину телефона */
+    padding: 0.75em;
+  }
+}

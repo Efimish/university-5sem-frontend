@@ -28,6 +28,7 @@
 
 .header__nav-left {
   display: flex;
+  align-items: center;
   gap: 2em;
 }
 
@@ -77,4 +78,40 @@
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 10rem;
+}
+
+@media (--viewport-xs) {
+  .header {
+    background-position: center top; /* чтобы картинка не обрезалась странно */
+  }
+
+  .header__nav {
+    flex-direction: column; /* переносим в столбец */
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .header__nav-left {
+    flex-direction: column; /* меню в колонку */
+    gap: 0.75rem;
+  }
+
+  .header__nav-button {
+    padding: 0.5em 1.5em; /* чуть меньше кнопка */
+  }
+
+  .header__breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 0.875em; /* уменьшить текст */
+    & * {
+      flex-shrink: initial;
+    }
+  }
+
+  .header__title {
+    font-size: 2em; /* уменьшить заголовок */
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+  }
 }

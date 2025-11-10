@@ -129,3 +129,75 @@
   filter: invert(1);
   height: 1.2em;
 }
+
+@media (prefers-color-scheme: dark) {
+  .main__container-left-stats {
+    filter: invert(1);
+  }
+
+  .main__right-share-image {
+    filter: none;
+  }
+}
+
+@media (--viewport-xs) {
+  .main {
+    padding-top: 2em;
+    padding-bottom: 4em;
+  }
+
+  .main__container {
+    flex-direction: column; /* одна колонка вместо двух */
+    gap: 2.5em; /* уменьшаем расстояние */
+    padding: 0 1.5em; /* чтобы было удобочитаемо */
+  }
+
+  .main__container-left,
+  .main__container-right {
+    flex-basis: auto; /* убираем фиксированные ширины */
+    width: 100%;
+  }
+
+  .main__left-title,
+  .main__right-title {
+    font-size: 1.25em; /* уменьшаем заголовки */
+  }
+
+  .main__paragraph,
+  .main__left-text,
+  .main__list-item {
+    font-size: 0.9em; /* чуть крупнее, чем на десктопе, для удобства */
+  }
+
+  .main__left-text-important {
+    margin-top: 2.5em;
+    margin-bottom: 0.75em;
+  }
+
+  .main__left-diagram {
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
+
+  .main__left-illustration {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .main__right-about-client {
+    padding: 1em 1.25em; /* меньше отступы */
+  }
+
+  .main__right-tags {
+    flex-wrap: wrap; /* теги в несколько строк */
+    gap: 0.6em;
+  }
+
+  .main__right-share-text {
+    font-size: 1em;
+  }
+
+  .main__right-share-image {
+    height: 1em;
+  }
+}
